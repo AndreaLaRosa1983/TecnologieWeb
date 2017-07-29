@@ -57,7 +57,7 @@ if(isset($_POST['register'])) {
                 <h3>Registrati</h3>
                 <form action="<?php echo $_SERVER['PHP_SELF'] ?> " method="POST">
                     <label>Username: <input type="text" name="username" required maxlength="32"></label><br/>
-                    <label>Password: <input type="password" name="password" required maxlength="32"></label><br/>
+                    <label>Password: <input type="password" name="password" required maxlength="32"></label><p>La password deve contenere almeno 6 caratteri</p>
                     <label>Email: <input type="email" name="email" required maxlength="64"></label><br/>
                     <input type="submit" name="register" value="Registrati"><br/>
                 </form>
