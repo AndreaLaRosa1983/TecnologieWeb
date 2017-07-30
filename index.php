@@ -47,9 +47,10 @@ if(isset($_SESSION['username'])) {
                     border-radius: 100%;
                     width: 80px;
                     height: 80px;
-                    margin-top:70%;
+                    margin-top: 120px;
+                    margin-left: 100px;
                     position:absolute;
-                    color: #bb2e29;
+                    color: #ffffff;
                     line-height: 80px;
                     -webkit-transform: translate3d(0, 0, 0);
                     transform: translate3d(0, 0, 0);
@@ -59,51 +60,12 @@ if(isset($_SESSION['username'])) {
                     align: center;
                 }
 
-                .menu-open { display: none; }
+                .menu-open {
+                     display: none;
+                 }
 
-                .lines {
-                    width: 25px;
-                    height: 3px;
-                    background: #596778;
-                    display: block;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    margin-left: -12.5px;
-                    margin-top: -1.5px;
-                    -webkit-transition: -webkit-transform 200ms;
-                    transition: -webkit-transform 200ms;
-                }
 
-                .line-1 {
-                    -webkit-transform: translate3d(0, -8px, 0);
-                    transform: translate3d(0, -8px, 0);
-                }
 
-                .line-2 {
-                    -webkit-transform: translate3d(0, 0, 0);
-                    transform: translate3d(0, 0, 0);
-                }
-
-                .line-3 {
-                    -webkit-transform: translate3d(0, 8px, 0);
-                    transform: translate3d(0, 8px, 0);
-                }
-
-                .menu-open:checked + .menu-open-button .line-1 {
-                    -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
-                    transform: translate3d(0, 0, 0) rotate(45deg);
-                }
-
-                .menu-open:checked + .menu-open-button .line-2 {
-                    -webkit-transform: translate3d(0, 0, 0) scale(0.1, 1);
-                    transform: translate3d(0, 0, 0) scale(0.1, 1);
-                }
-
-                .menu-open:checked + .menu-open-button .line-3 {
-                    -webkit-transform: translate3d(0, 0, 0) rotate(-45deg);
-                    transform: translate3d(0, 0, 0) rotate(-45deg);
-                }
 
                 .menu {
                     position: absolute;
@@ -319,8 +281,8 @@ if(isset($_SESSION['username'])) {
             <body>
             <nav class="menu">
                 <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
-                <label class="menu-open-button" for="menu-open"> <span class="lines line-1"></span> <span class="lines line-2"></span> <span class="lines line-3"></span> </label>
-                <a href="#" class="menu-item item-1"> <i class="fa fa-anchor"></i> </a> <a href="#" class="menu-item item-2"> <i class="fa fa-coffee"></i> </a> <a href="#" class="menu-item item-3"> <i class="fa fa-heart"></i> </a> <a href="#" class="menu-item item-4"> <i class="fa fa-microphone"></i> </a> <a href="#" class="menu-item item-5"> <i class="fa fa-star"></i> </a> <a href="#" class="menu-item item-6"> <i class="fa fa-diamond"></i> </a> </nav>
+                <label class="menu-open-button" for="menu-open"><i class="glyphicon glyphicon-cog"  ></i>  </label>
+                <a href="#" class="menu-item item-1"> <i class="glyphicon glyphicon-cutlery"></i> </a> <a href="#" class="menu-item item-2"> <i class="glyphicon glyphicon-envelope"></i> </a> <a href="#" class="menu-item item-3"> <i class="glyphicon glyphicon-calendar"></i> </a> <a href="#" class="menu-item item-4"> <i class="glyphicon glyphicon-book"></i> </a> <a href="#" class="menu-item item-5"> <i class="glyphicon glyphicon-bell"></i> </a> <a href="#" class="menu-item item-6"> <i class="glyphicon glyphicon-education"></i> </a> </nav>
             </body>
             <script>
                 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
