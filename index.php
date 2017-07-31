@@ -28,13 +28,13 @@ if(isset($_SESSION['username'])) {
     if($row['last_login'] == NULL) {
         echo 'Benvenuto, ' . $_SESSION['username'] . ' questo è il tuo primo accesso';
     } else if($row['last_login'] != NULL) {
-        echo 'Bentornato, ' . $_SESSION['username'] . '.<br />il tuo ultimo login risale al giorno ' . date('d-m-y', $row['last_login']) .
-        ' alle ore ' . date('H:i', $row['last_login']);
+        echo 'Bentornato, ' . $_SESSION['username'] . ' <br />Matricola: '. $_SESSION['userid'] .  '<br />Il tuo ultimo login risale al giorno ' . date('d-m-y', $row['last_login']) .
+            ' alle ore ' . date('H:i', $row['last_login']) ;
     }
-    }
+}
     else {
         echo "qualcosa è andato storto";
-        header('Location: ok.php');
+        header('Location: start.php');
     }
 ?>
 
@@ -63,10 +63,10 @@ if(isset($_SESSION['username'])) {
                 .menu-open {
                      display: none;
                  }
-
-
-
-
+                .menu-open-button:hover{
+                    background: #6b0808;
+                    color: #ffffff;
+                }
                 .menu {
                     position: absolute;
                     width: 80px;
@@ -262,20 +262,6 @@ if(isset($_SESSION['username'])) {
                     text-shadow: none;
                 }
 
-                .citem-3it {
-                    margin: 24px 20px 120px 0;
-                    text-align: right;
-                    color: #ee3939;
-                }
-
-                .citem-3it a {
-                    padding: 8px 0;
-                    color: #C49CDE;
-                    text-decoration: none;
-                    transition: all 0.3s ease 0s;
-                }
-
-                .citem-3it a:hover { text-decoration: underline; }
             </style>
 
             <body>
