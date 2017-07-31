@@ -77,7 +77,7 @@ if(isset($_SESSION['username'])) {
                 }
 
                 .menu-item:hover {
-                    background: #d92432;
+                    background: #6b0808;
                     color: #ffffff;
                 }
 
@@ -197,68 +197,68 @@ if(isset($_SESSION['username'])) {
                 }
 
                 .item-1 {
-                    background-color: #669AE1;
+                    background-color: #bb2e29;
                     box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
                     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
                 }
 
                 .item-1:hover {
-                    color: #669AE1;
+                    color: #ffffff;
                     text-shadow: none;
                 }
 
                 .item-2 {
-                    background-color: #70CC72;
+                    background-color: #bb2e29;
                     box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
                     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
                 }
 
                 .item-2:hover {
-                    color: #70CC72;
+                    color: #ffffff;
                     text-shadow: none;
                 }
 
                 .item-3 {
-                    background-color: #FE4365;
+                    background-color: ##bb2e29;
                     box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
                     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
                 }
 
                 .item-3:hover {
-                    color: #FE4365;
+                    color: #ffffff;
                     text-shadow: none;
                 }
 
                 .item-4 {
-                    background-color: #C49CDE;
+                    background-color: #bb2e29;
                     box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
                     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
                 }
 
                 .item-4:hover {
-                    color: #C49CDE;
+                    color: ##ffffff;
                     text-shadow: none;
                 }
 
                 .item-5 {
-                    background-color: #FC913A;
+                    background-color: #bb2e29;
                     box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
                     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
                 }
 
                 .item-5:hover {
-                    color: #FC913A;
+                    color: #ffffff;
                     text-shadow: none;
                 }
 
                 .item-6 {
-                    background-color: #62C2E4;
+                    background-color: #bb2e29;
                     box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
                     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
                 }
 
                 .item-6:hover {
-                    color: #62C2E4;
+                    color: #ffffff;
                     text-shadow: none;
                 }
 
@@ -284,16 +284,6 @@ if(isset($_SESSION['username'])) {
                 <label class="menu-open-button" for="menu-open"><i class="glyphicon glyphicon-cog"  ></i>  </label>
                 <a href="#" class="menu-item item-1"> <i class="glyphicon glyphicon-cutlery"></i> </a> <a href="#" class="menu-item item-2"> <i class="glyphicon glyphicon-envelope"></i> </a> <a href="#" class="menu-item item-3"> <i class="glyphicon glyphicon-calendar"></i> </a> <a href="#" class="menu-item item-4"> <i class="glyphicon glyphicon-book"></i> </a> <a href="#" class="menu-item item-5"> <i class="glyphicon glyphicon-bell"></i> </a> <a href="#" class="menu-item item-6"> <i class="glyphicon glyphicon-education"></i> </a> </nav>
             </body>
-            <script>
-                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-                ga('create', 'UA-46156385-1', 'cssscript.com');
-                ga('send', 'pageview');
-
-            </script>
         </div>
     </div>
 </html>
