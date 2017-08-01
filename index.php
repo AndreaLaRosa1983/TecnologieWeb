@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -268,7 +267,7 @@ if(isset($_SESSION['username'])) {
             <nav class="menu">
                 <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
                 <label class="menu-open-button" for="menu-open"><i class="glyphicon glyphicon-cog"  ></i>  </label>
-                <a href="#" class="menu-item item-1"> <i class="glyphicon glyphicon-cutlery"></i> </a> <a href="#" class="menu-item item-2"> <i class="glyphicon glyphicon-envelope"></i> </a> <a href="#" class="menu-item item-3"> <i class="glyphicon glyphicon-calendar"></i> </a> <a href="#" class="menu-item item-4"> <i class="glyphicon glyphicon-book"></i> </a> <a href="#" class="menu-item item-5"> <i class="glyphicon glyphicon-bell"></i> </a> <a href="#" class="menu-item item-6"> <i class="glyphicon glyphicon-education"></i> </a> </nav>
+                <a href="foodpoint.php" class="menu-item item-1"> <i class="glyphicon glyphicon-cutlery"></i> </a> <a href="http://www.unibo.it/it/servizi-e-opportunita/servizi-online/la-mia-e-mail/la-mia-e-mail-per-gli-studenti" class="menu-item item-2"> <i class="glyphicon glyphicon-envelope"></i> </a> <a href="#" class="menu-item item-3"> <i class="glyphicon glyphicon-calendar"></i> </a> <a href="#" class="menu-item item-4"> <i class="glyphicon glyphicon-book"></i> </a> <a href="#" class="menu-item item-5"> <i class="glyphicon glyphicon-bell"></i> </a> <a href="studyplaces.php" class="menu-item item-6"> <i class="glyphicon glyphicon-education"></i> </a> </nav>
             </body>
         </div>
     </div>
