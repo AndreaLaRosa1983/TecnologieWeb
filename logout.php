@@ -18,8 +18,9 @@
 <?php
 include('core.php');
 if(isset($_POST['logout'])) {
-    session_unset($_SESSION['username']);
-    session_unset($_SESSION['userid']);
+    unset($_SESSION['username']);
+    unset($_SESSION['userid']);
+    unset($_SESSION['last_login']);
     header('Location: start.php');
     }
     else if(isset($_POST['torna_indietro'])) {
