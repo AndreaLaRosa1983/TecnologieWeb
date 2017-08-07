@@ -18,7 +18,6 @@
     <div class="row">
         <div class="col-sm-4"></div>
         <div class="col-sm-4 " >
-            <h3>Inizio</h3>
 <?php
 include('core.php');
 if(isset($_SESSION['username'])) {

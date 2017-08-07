@@ -7,7 +7,8 @@
 	{
 	background: #bb2e29;
 	max-width: 550px;
-	padding: 3px;
+    width:300px;
+    padding: 3px;
 	margin: 0px auto 0px auto;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -19,10 +20,10 @@
 	color: #ffffff;
 	font: bold 18px arial, sans-serif;
 	background: #bb2e29;
-	padding: 5px;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
+	padding: 0px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
 	}
 
 #tickr-scroll ul
@@ -49,12 +50,13 @@
 #tickr-scroll li 
 		{
 		color: #ffffff;
-		font: normal 18px arial, sans-serif;
-		line-height: 26px;
+		font: normal 14px arial, sans-serif;
+		line-height: 28px;
 		}
 
 #tickr-scroll a 
 	{
+
 	color: #000000;
 	text-decoration: none;
 	}
@@ -67,7 +69,7 @@
 
 #tickr-scroll ul
 	{
-	padding: 0px 6px 0px 6px;
+	padding: 0px 2px 0px 2px;
 	-webkit-animation: tickr 12s cubic-bezier(1, 0, .5, 0) infinite;
 	-moz-animation: tickr 12s cubic-bezier(1, 0, .5, 0) infinite;
 	animation: tickr 12s cubic-bezier(1, 0, .5, 0) infinite;
@@ -115,9 +117,9 @@
 START MEDIA QUERIES FOR SMARTPHONE FONT SIZES
 ***************/
 
-@media handheld and (max-width: 482px),
-   screen and (max-device-width: 482px),
-   screen and (max-width: 482px) 
+@media handheld and (max-width: 300px),
+   screen and (max-device-width: 300px),
+   screen and (max-width: 300px)
 	{
 
 
