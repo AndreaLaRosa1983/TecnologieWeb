@@ -3,6 +3,7 @@ $DB_host = 'localhost';
 $DB_user = 'root';
 $DB_password = '';
 $DB_name = 'sol';
+date_default_timezone_set("Europe/Rome");
 
 $link = mysqli_connect($DB_host, $DB_user, $DB_password);
 mysqli_select_db($link,$DB_name) or die("impossibile connettersi.".mysqli_error($link));

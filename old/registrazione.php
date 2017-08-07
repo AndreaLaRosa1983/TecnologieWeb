@@ -4,7 +4,7 @@
     <title>UNIBO</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
@@ -12,7 +12,7 @@
 <div style="margin: 0 auto" class="jumbotron text-center">
     <?php include('menu.html'); ?>
     <h1 style="color: white; font-family: 'Goudy Trajan Regular' ;
-    font-weight: bold; min-font-size: 500%" >UNIBO <img src="images/logo-unibo.png" width=12% height=12% /> </h1>
+    font-weight: bold; min-font-size: 500%" >UNIBO <img src="../images/logo-unibo.png" width=12% height=12% /> </h1>
 </div>
 
 <?php

@@ -27,8 +27,9 @@ if(isset($_SESSION['username'])) {
     if($row['last_login'] == NULL) {
         echo 'Benvenuto, ' . $_SESSION['username'] . ' questo è il tuo primo accesso';
     } else if($row['last_login'] != NULL) {
-        echo 'Bentornato, ' . $_SESSION['username'] . ' <br />Matricola: '. $_SESSION['userid'] .  '<br />Il tuo ultimo login risale al giorno ' . date('d-m-y', $row['last_login']) .
-            ' alle ore ' . date('H:i', $row['last_login']) ;
+        echo 'Bentornato, ' . $_SESSION['username'] . ' <br />Matricola: '. $_SESSION['userid'] .
+            '<br />Il tuo ultimo login risale al giorno ' . date('d-m-y', $_SESSION['last_login']) .
+            ' alle ore ' . date('H:i', $_SESSION['last_login']) ;
     }
 }
     else {
@@ -267,7 +268,13 @@ if(isset($_SESSION['username'])) {
             <nav class="menu">
                 <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
                 <label class="menu-open-button" for="menu-open"><i class="glyphicon glyphicon-cog"  ></i>  </label>
-                <a href="foodpoint.php" class="menu-item item-1"> <i class="glyphicon glyphicon-cutlery"></i> </a> <a href="http://www.unibo.it/it/servizi-e-opportunita/servizi-online/la-mia-e-mail/la-mia-e-mail-per-gli-studenti" class="menu-item item-2"> <i class="glyphicon glyphicon-envelope"></i> </a> <a href="#" class="menu-item item-3"> <i class="glyphicon glyphicon-calendar"></i> </a> <a href="#" class="menu-item item-4"> <i class="glyphicon glyphicon-book"></i> </a> <a href="#" class="menu-item item-5"> <i class="glyphicon glyphicon-bell"></i> </a> <a href="studyplaces.php" class="menu-item item-6"> <i class="glyphicon glyphicon-education"></i> </a> </nav>
+                <a href="foodpoint.php" class="menu-item item-1"> <i class="glyphicon glyphicon-cutlery"></i> </a>
+                <a href="https://outlook.office365.com/studio.unibo.it" class="menu-item item-2"> <i class="glyphicon glyphicon-envelope"></i></a>
+                <a href="#" class="menu-item item-3"> <i class="glyphicon glyphicon-calendar"></i> </a>
+                <a href="#" class="menu-item item-4"> <i class="glyphicon glyphicon-book"></i> </a>
+                <a href="#" class="menu-item item-5"> <i class="glyphicon glyphicon-bell"></i> </a>
+                <a href="studyplaces.php" class="menu-item item-6"> <i class="glyphicon glyphicon-education"></i> </a>
+            </nav>
             </body>
         </div>
     </div>
