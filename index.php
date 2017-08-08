@@ -11,32 +11,17 @@
 
 <div class="jumbotron text-center">
     <?php include('menu.html'); ?>
-    <h1 style="color: white; font-family: 'FabfeltScript Bold'; ">Studenti Online<img src="images/logo.png" width=12%; height=12%; style=" margin-left: 20px"/></h1>
-</div>
+    <h1 style="color: white; font-family: 'FabfeltScript Bold'; ">Studenti Online<img src="images/logo.png" width=12%; height=12%; style=" margin-left: 20px"/>
+</div></h1>
 
-<?php
-include('core.php');
-if(isset($_SESSION['username'])) {
-    $userid = $_SESSION['userid'];
-    $row = mysqli_fetch_assoc(mysqli_query($link,"Select * FROM utenti WHERE id='$userid'"));
-    if($row['last_login'] == NULL) {
-        echo 'Benvenuto, ' . $_SESSION['username'] . ' questo è il tuo primo accesso';
-    } else if($row['last_login'] != NULL) {
-        echo 'Bentornato, ' . $_SESSION['username'] . ' <br />Matricola: '. $_SESSION['userid'] .
-            '<br />Il tuo ultimo login risale al giorno ' . date('d-m-y', $_SESSION['last_login']) .
-            ' alle ore ' . date('H:i', $_SESSION['last_login']) ;
-    }
-}
-else {
-    echo "qualcosa è andato storto";
-    header('Location: start.php');
-}
-?>
+
 
 <div class="container">
     <div class="row">
-        <div class="col-sm-4"></div>
-        <div class="col-sm-4 " >
+        <div class="col-sm-4"><p style="color: #000000; font-family: 'FabfeltScript Bold';
+       "><?php include "welcome.php"; ?></p></div>
+        <div class="col-sm-4" >
+
 
 
             <style>
@@ -236,7 +221,7 @@ else {
                 }
 
                 .item-4:hover {
-                    color: ##ffffff;
+                    color: #ffffff;
                     text-shadow: none;
                 }
 

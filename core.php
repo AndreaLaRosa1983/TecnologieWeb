@@ -12,9 +12,6 @@ mysqli_query($link,"CREATE TABLE IF NOT EXISTS utenti(id INT NOT NULL AUTO_INCRE
  email VARCHAR(64), last_ip VARCHAR(20), last_login INT)");
 
 
-function clear($var) {
-    return addslashes(htmlspecialchars(trim($var)));
-}
 
 ?>
 
