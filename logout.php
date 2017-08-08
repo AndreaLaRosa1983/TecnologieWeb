@@ -21,7 +21,7 @@ if(isset($_POST['logout'])) {
     unset($_SESSION['username']);
     unset($_SESSION['userid']);
     unset($_SESSION['last_login']);
-    header('Location: start.php');
+    header('Location: init.php');
     }
     else if(isset($_POST['torna_indietro'])) {
         header('Location: index.php');

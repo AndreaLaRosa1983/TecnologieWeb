@@ -20,6 +20,6 @@ if(isset($_SESSION['username'])) {
 }
 else {
     echo "qualcosa è andato storto";
-    header('Location: start.php');
+    header('Location: init.php');
 }
 ?>
