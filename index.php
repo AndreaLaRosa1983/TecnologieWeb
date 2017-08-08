@@ -14,10 +14,6 @@
     <h1 style="color: white; font-family: 'FabfeltScript Bold'; ">Studenti Online<img src="images/logo.png" width=12%; height=12%; style=" margin-left: 20px"/></h1>
 </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-sm-4"></div>
-        <div class="col-sm-4 " >
 <?php
 include('core.php');
 if(isset($_SESSION['username'])) {
@@ -31,11 +27,16 @@ if(isset($_SESSION['username'])) {
             ' alle ore ' . date('H:i', $_SESSION['last_login']) ;
     }
 }
-    else {
-        echo "qualcosa è andato storto";
-        header('Location: start.php');
-    }
+else {
+    echo "qualcosa è andato storto";
+    header('Location: start.php');
+}
 ?>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4 " >
 
 
             <style>
