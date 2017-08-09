@@ -11,6 +11,7 @@
 
 <div class="jumbotron text-center">
     <?php include('menu.html'); ?>
+
     <h1 style="color: white; font-family: 'FabfeltScript Bold'; ">Studenti Online<img src="images/logo.png" width=12%; height=12%; style=" margin-left: 20px"/>
 </div></h1>
 
@@ -255,7 +256,7 @@
                 <label class="menu-open-button" for="menu-open"><i class="glyphicon glyphicon-cog"  ></i>  </label>
                 <a href="foodpoint.php" class="menu-item item-1"> <i class="glyphicon glyphicon-cutlery"></i> </a>
                 <a href="https://outlook.office365.com/studio.unibo.it" class="menu-item item-2"> <i class="glyphicon glyphicon-envelope"></i></a>
-                <a href="#" class="menu-item item-3"> <i class="glyphicon glyphicon-calendar"></i> </a>
+                <a href="calendar.php" class="menu-item item-3"> <i class="glyphicon glyphicon-calendar"></i> </a>
                 <a href="#" class="menu-item item-4"> <i class="glyphicon glyphicon-book"></i> </a>
                 <a href="#" class="menu-item item-5"> <i class="glyphicon glyphicon-bell"></i> </a>
                 <a href="studyplaces.php" class="menu-item item-6"> <i class="glyphicon glyphicon-education"></i> </a>
