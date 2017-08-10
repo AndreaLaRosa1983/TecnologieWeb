@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
   <title>Studenti Online</title>
   <meta charset="utf-8">
@@ -27,45 +27,47 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-sm-2">
-        <p> <img src="https://funanddystopia.files.wordpress.com/2013/07/ou25hjfhqwb0r4wi1fzo5.png" alt="immagine panino" height="50"> <p>
-           <h3> Il Paninazzo </h3>
-          <P>Panini e Piadine</p>
-            <p>Piazzale Università 1</p>
-          </div>
+      <div class="col-sm-12">
+
+        <div id="map"></div>
           <div class="col-sm-2">
+          <p> <img src="https://funanddystopia.files.wordpress.com/2013/07/ou25hjfhqwb0r4wi1fzo5.png" alt="immagine panino" height="50"> <p>
+          <h3> Il Paninazzo </h3>
+          <P>Panini e Piadine</p>
+          <p>Piazzale Università 1</p>
+      </div>
+        <div class="col-sm-2">
             <p><img src="http://www.clker.com/cliparts/V/P/G/r/q/T/muffin-hi.png" alt="immagine budino ricoperto al cioccolato con ciliegia sopra" height="50"> </p>
             <h3> Il Dolcino </h3>
             <p>  Dolci, Crepes e Gelato.</p>
             <p>Via Verdi 43</p>
-            </div>
-          <div class="col-sm-2">
+        </div>
+        <div class="col-sm-2">
             <p><img src="http://www.clker.com/cliparts/d/9/3/e/12456949931930152422johnny_automatic_iceberg_lettuce.svg.hi.png" alt="immagine fetta limone" height="50"></p>
             <h3> Veggy Food </h3>
             <p>Piatti vegetariani, vegani e menù per Celiaci.</p>
             <p>P.le Loreto 23</p>
-          </div>
-          <div class="col-sm-2">
-            <p><img src="http://www.clker.com/cliparts/8/f/9/4/1194984144102684069pizza_4_stagioni_archite_01.svg.med.png" alt="immagine fetta di pizza" height="50" ><p>
-              <h3> Food For You </h3>
-              <p>Specialità pizza e panzerotti.</p>
-              <p>Viale dei Giardini 99</p>
-              </div>
-            <div class="col-sm-2">
-              <p><img src="http://lexingtonlions.clubwizard.com/IMUpload/spaghetti-clipart-spaghetti.gif" alt="immagine piatto spaghetti" height="50"></p>
-              <h3> Mensa Gran Risparmio </h3>
-              <p> Dagli antipasti al dolce</p>
-              <p>Parco della Vittoria 16</p>
-            </div>
-            <div class="col-sm-2">
-              <p><img src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons-256/yellow-road-sign-icons-signs/096982-yellow-road-sign-icon-signs-road-food-sc50.png" alt="immagine cibo" height="50"></p>
-              <h3> il Centro </h3>
-              <p> Specialità di Pesce</p>
-              <p> Vicolo Corto 8 </p>
-            </div>
-          </div>
         </div>
-        <div id="map"></div>
+        <div class="col-sm-2">
+            <p><img src="http://www.clker.com/cliparts/8/f/9/4/1194984144102684069pizza_4_stagioni_archite_01.svg.med.png" alt="immagine fetta di pizza" height="50" ><p>
+            <h3> Food For You </h3>
+            <p>Specialità pizza e panzerotti.</p>
+            <p>Viale dei Giardini 99</p>
+        </div>
+        <div class="col-sm-2">
+            <p><img src="http://lexingtonlions.clubwizard.com/IMUpload/spaghetti-clipart-spaghetti.gif" alt="immagine piatto spaghetti" height="50"></p>
+            <h3> Mensa Gran Risparmio </h3>
+            <p> Dagli antipasti al dolce</p>
+            <p>Parco della Vittoria 16</p>
+        </div>
+        <div class="col-sm-2">
+            <p><img src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons-256/yellow-road-sign-icons-signs/096982-yellow-road-sign-icon-signs-road-food-sc50.png" alt="immagine cibo" height="50"></p>
+            <h3> il Centro </h3>
+            <p> Specialità di Pesce</p>
+            <p> Vicolo Corto 8 </p>
+        </div>
+    </div>
+  </div>
         <script>
         function initMap() {
           var cesena = {lat: 44.139504, lng: 12.247706};

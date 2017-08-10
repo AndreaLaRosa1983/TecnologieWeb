@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <title>Studenti Online</title>
     <meta charset="utf-8">
@@ -28,43 +28,7 @@
 <body>
 
   <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <p><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Alpha_lowercase.svg/601px-Alpha_lowercase.svg.png" height="45"> </p>
-        <h3>
-          Sala studio multimediale "Alfa Albatros"
-        </h3>
-        <p>  Via Mulini 23/25
-          <p>Situata nel rinnovato complesso "Ex Macello", è dotata</p>
-          <p> di 26 postazioni pc e numerose postazioni per la connessione</p>
-        <p>con pc portatile.All'interno della sala è possibile navigare</p>
-      <p> in rete grazie alla completa copertura wireless "Almawifi".</p>
-      <p>A disposizione degli studenti un servizio di stampa </p>
-      <p>in bianco e nero e a colori (quest'ultimo per i soli tesisti).</p>
-      <p>La sala studio è gestita dall'Associazione studentesca S.P.R.I.Te.,</p>
-      <p>grazie alla quale è garantito un ampio orario di apertura:</p>
-      <p>- dal lunedì al venerdì, dalle 9 alle 21;</p>
-      <p>- il sabato dalle 9 alle 21;</p>
-      <p>- la domenica dalle 12 alle 24.</p>
-      <p>E-mail: salastudioalfa@gmail.com</p>
-      <p>Telefono: 0547 338864</p>
 
-    </div>
-    <div class="col-md-6">
-      <p><img src= "http://i.investopedia.com/dimages/graphics/beta03.png" height="50" > </p>
-      <h3>Sala studio e lettura "Beta"</h3>
-      <p>Piazzale K. Marx 131</p>
-      <p>E' dotata di 4 postazioni PC,40 posti lettura e una zona </p>
-      <p> "Erasmus" con 2 tavoli, 4 postazioni lettura e 1 PC </p>
-      <p>destinati agli studenti internazionali.</p>
-      <p>La Sala "Beta" è gestita dall'Associazionie Studentesca</p>
-      <p>Analysis e osserva un ampio orario di apertura,</p>
-      <p> per consentire la migliore fruizione da parte degli studenti:<p>
-        <p>- dal lunedì al giovedì: ore 9 - 24;</p>
-        <p>- dal venerdì alla domenica: ore 9 - 21.</p>
-        <p>E-mail: aulaletturabeta@gmail.com</p>
-      </div>
-    </div>
 
     <div id="map"></div>
     <script>
@@ -106,6 +70,44 @@
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9oCMD8emHB1GpNhzYFD_Vm6-lrIobEIM&callback=initMap">
     </script>
+
+      <div class="row">
+          <div class="col-md-6">
+              <p><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Alpha_lowercase.svg/601px-Alpha_lowercase.svg.png" height="45"> </p>
+              <h3>
+                  Sala studio multimediale "Alfa Albatros"
+              </h3>
+              <p>  Via Mulini 23/25
+              <p>Situata nel rinnovato complesso "Ex Macello", è dotata</p>
+              <p> di 26 postazioni pc e numerose postazioni per la connessione</p>
+              <p>con pc portatile.All'interno della sala è possibile navigare</p>
+              <p> in rete grazie alla completa copertura wireless "Almawifi".</p>
+              <p>A disposizione degli studenti un servizio di stampa </p>
+              <p>in bianco e nero e a colori (quest'ultimo per i soli tesisti).</p>
+              <p>La sala studio è gestita dall'Associazione studentesca S.P.R.I.Te.,</p>
+              <p>grazie alla quale è garantito un ampio orario di apertura:</p>
+              <p>- dal lunedì al venerdì, dalle 9 alle 21;</p>
+              <p>- il sabato dalle 9 alle 21;</p>
+              <p>- la domenica dalle 12 alle 24.</p>
+              <p>E-mail: salastudioalfa@gmail.com</p>
+              <p>Telefono: 0547 338864</p>
+
+          </div>
+          <div class="col-md-6">
+              <p><img src= "http://i.investopedia.com/dimages/graphics/beta03.png" height="50" > </p>
+              <h3>Sala studio e lettura "Beta"</h3>
+              <p>Piazzale K. Marx 131</p>
+              <p>E' dotata di 4 postazioni PC,40 posti lettura e una zona </p>
+              <p> "Erasmus" con 2 tavoli, 4 postazioni lettura e 1 PC </p>
+              <p>destinati agli studenti internazionali.</p>
+              <p>La Sala "Beta" è gestita dall'Associazionie Studentesca</p>
+              <p>Analysis e osserva un ampio orario di apertura,</p>
+              <p> per consentire la migliore fruizione da parte degli studenti:<p>
+              <p>- dal lunedì al giovedì: ore 9 - 24;</p>
+              <p>- dal venerdì alla domenica: ore 9 - 21.</p>
+              <p>E-mail: aulaletturabeta@gmail.com</p>
+          </div>
+      </div>
   </div>
 
 

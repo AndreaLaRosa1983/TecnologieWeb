@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <title>UNIBO</title>
     <meta charset="utf-8">

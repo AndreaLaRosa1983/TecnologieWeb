@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <title>Studenti Online</title>
     <meta charset="utf-8">
@@ -12,7 +12,7 @@
 <div class="jumbotron text-center">
     <?php include('menu.html'); ?>
 
-    <h1 style="color: white; font-family: 'FabfeltScript Bold'; ">Calendario<img src="images/logo.png" width=12%; height=12%; style=" margin-left: 20px"/>
+    <h1 style="color: white; font-family: 'FabfeltScript Bold'; ">Calendario<img src="images/logo.png" width=12%; height=12%; style=" margin-left: 20px" alt=”image.logo.png Logo – Unibo”/>
 </div></h1>
 <style>
     table {

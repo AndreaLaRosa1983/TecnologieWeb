@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <title>UNIBO</title>
     <meta charset="utf-8">
@@ -11,7 +11,7 @@
 
 <div style="background-color:#66afe9; margin: 0 auto" class="jumbotron text-center" >
     <h1 style="color: white; font-family: 'Goudy Trajan Regular' ;
-    font-weight: bold; min-font-size: 500%" >Pagina Amministratore <img src="images/admin.png" width=6% height=6% /> </h1>
+    font-weight: bold; min-font-size: 500%" >Pagina Amministratore <img src="images/admin.png" width=6% height=6% alt=”image.admin.png Logo – Admin” /> </h1>
 </div>
 
 <?php
@@ -59,7 +59,8 @@ if(isset($_POST['register'])) {
                     <label>Username: <input type="text" name="username" required maxlength="32"></label><br/>
                     <label>Password: <input type="password" name="password" required maxlength="32"></label><p>La password deve contenere almeno 6 caratteri</p>
                     <label>Email: <input type="email" name="email" required maxlength="64"></label><br/>
-                    <input type="submit" name="register" value="Inserisci Utente"><br/>
+                    <input type="submit" name="register" value="Inserisci Utente"><br/><br/>
+
                 </form>
 
         </div>
@@ -99,7 +100,8 @@ if(isset($_POST['register'])) {
                     <form action="<?php echo $_SERVER['PHP_SELF'] ?> " method="POST">
                         <label>Titolo: <input type="text" name="title" required maxlength="140"></label><br/>
                         <label>Url: <input type="text" name="urln" required maxlength="2083"></label><br/>
-                        <input type="submit" name="news" value="Inserisci Notizia"><br/>
+                        <input type="submit" name="news" value="Inserisci Notizia"><br/><br/>
+
                     </form>
 
                 </div>
