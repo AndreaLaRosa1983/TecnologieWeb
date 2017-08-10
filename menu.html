@@ -26,7 +26,8 @@ if (isset($_SESSION['username']) && isset($_SESSION['userid'])){
         </div>
 
         <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav navbar-left"><?php include "news.php";  ?></ul>
+            <!-- <ul class="nav navbar-nav">
                 <li class="active"><a href="#"></a></li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#"> <span class="caret"></span></a>
@@ -39,7 +40,7 @@ if (isset($_SESSION['username']) && isset($_SESSION['userid'])){
                 <li><a href="#">Page 2</a></li>
                 <li><a href="#">Page 3</a></li>
 
-            </ul>
+            </ul> -->
 
             <ul class="nav navbar-nav navbar-right"> <?php
 if (isset($_SESSION['username']) && isset($_SESSION['userid'])){ ;
@@ -49,7 +50,7 @@ if (isset($_SESSION['username']) && isset($_SESSION['userid'])){ ;
                 <?php }
              ?>
             </ul>
-            <ul class="nav navbar-nav navbar-right"><?php include "news.php";  ?></ul>
+
         </div>
     </div>
 </nav>
