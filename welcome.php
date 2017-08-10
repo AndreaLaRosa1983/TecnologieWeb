@@ -15,7 +15,7 @@ if(isset($_SESSION['username'])) {
     } else if($row['last_login'] != NULL) {
         echo 'Utente: ' . $_SESSION['username'] . '</br>id: '. $_SESSION['userid'] .
             '</br>Ultimo accesso ' . date('d-m-y', $_SESSION['last_login']) .
-            'ore ' . date('H:i', $_SESSION['last_login']) ;
+            ' ore ' . date('H:i', $_SESSION['last_login']) ;
     }
 }
 else {

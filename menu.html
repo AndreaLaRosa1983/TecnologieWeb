@@ -44,7 +44,11 @@ if (isset($_SESSION['username']) && isset($_SESSION['userid'])){
 
             <ul class="nav navbar-nav navbar-right"> <?php
 if (isset($_SESSION['username']) && isset($_SESSION['userid'])){ ;
-?> <li> <a href="logout.php" class="navbar-brand"><span class="glyphicon glyphicon-log-out"> Logout</span></a></li>
+?>  <ul class="nav navbar-nav">
+                <li><p style="color: #ffffff; font-family: 'FabfeltScript Bold'; font-size:small"><?php include "welcome.php"; ?></p></li>
+            </ul>
+                <a href="logout.php" class="navbar-brand"><span class="glyphicon glyphicon-log-out"> Logout</span></a></li>
+
                 <?php  } else { ?>
                 <li><a href="login.php" class="navbar-brand"><span class="glyphicon glyphicon-log-in"> Login</span></a></li>
                 <?php }

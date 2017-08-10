@@ -37,8 +37,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-sm-4"><p style="color: #000000; font-family: 'FabfeltScript Bold';
-       "><?php include "welcome.php"; ?></p></div>
+        <div class="col-sm-4"></div>
         <div class="col-sm-4" >
 
             <?php
