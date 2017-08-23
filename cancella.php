@@ -46,7 +46,7 @@ Confermare per eseguire l'operazione.<br>
 elseif(isset($_POST['del_id']) && is_numeric($_POST['del_id']))
 {
   $del_id2 = $_POST['del_id'];
-  if (mysqli_query($con,"DELETE FROM appuntamenti WHERE id = '$del_id2'")or die(mysql_error()))
+  if (mysqli_query($con,"DELETE FROM appuntamenti WHERE id = '$del_id2'")or die(mysqli_error($con)))
   {
     echo "Cancellazione del servizio avvenuta con successo<br>
     <a style='color: #d92432' href=\"calendar.php\">Clicca per proseguire</a>";

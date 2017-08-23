@@ -9,11 +9,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
-<div class="jumbotron text-center">
-    <?php include('menu.html'); ?>
-
-    <h1 style="color: white; font-family: 'FabfeltScript Bold'; ">Calendario<img src="images/logo.png" width=12%; height=12%; style=" margin-left: 20px" alt=”image.logo.png Logo – Unibo”/>
-</div></h1>
+<div style="background-color:#66afe9; margin: 0 auto" class="jumbotron text-center" >
+    <h1 style="color: white; font-family: 'Goudy Trajan Regular' ;
+    font-weight: bold; min-font-size: 500%"> Calendario Amministratore <img src="images/admin.png" width=6% height=6% alt=”image.admin.png Logo – Admin” /> </h1>
+</div>
 <style>
     table {
         font-family: arial, sans-serif;
@@ -115,10 +114,10 @@
                         $user = 'root';
                         $pass = '';
                         $db = 'agenda';
-                        $user_id = $_SESSION['userid'];
+                        $user_id = '0';
                         $con = mysqli_connect($host,$user,$pass) or die (mysqli_error($con));
                         $sel = mysqli_select_db($con,$db) or die (mysqli_error($con));
-                        $sql = "SELECT str_data FROM appuntamenti WHERE user_id=$user_id OR user_id='0'";
+                        $sql = "SELECT str_data FROM appuntamenti WHERE user_id='0'";
                         $result = mysqli_query($con,$sql) or die (mysqli_error($con));
                         if(mysqli_num_rows($result) > 0)
                         {
@@ -127,7 +126,7 @@
                                 $str_data = $fetch['str_data'];
                                 if ($str_data == $data)
                                 {
-                                    $day = "<a style='color:#1d6684' href=\"appuntamenti.php?day=$str_data\">$day</a>";
+                                    $day = "<a style='color:#1d6684' href=\"admin_appuntamenti.php?day=$str_data\">$day</a>";
                                 }
                             }
                         }
@@ -151,12 +150,12 @@
             ShowCalendar(date("m"),date("Y"));
 
             ?>
+
+            <a style='color: blue' href="admin.php">Torna a Pagina Amministratore</a>
         </div>
         <div class="col-sm-4" >
 
-<?php
-include 'form.php';
-?>
+
         </div>
     </div>
 </div>
