@@ -1,137 +1,17 @@
+.newsTicker{
+    background-color:white;
+    margin-top:15px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding-right: 7px;
+    padding-left: 7px;
 
-/* CSS TICKER - ALLWEBCO DESIGN CORPORATION */
+}
+.aTicker{
+    color:black;
 
-/* THERE ARE NO RESTRICTIONS FOR USE ON ANY WEBSITE PROJECT */
-
-#tickr-box 
-	{
-	background: #bb2e29;
-	max-width: 550px;
-    width:300px;
-    padding: 3px;
-	margin: 0px auto 0px auto;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	}
-
-.tickr-title 
-	{
-	color: #ffffff;
-	font: bold 18px arial, sans-serif;
-	background: #bb2e29;
-	padding: 0px;
-	-webkit-border-radius: 0px;
-	-moz-border-radius: 0px;
-	border-radius: 0px;
-	}
-
-#tickr-scroll ul
-	{
-	margin: 0px;
-	padding: 0px;
-	border: 0px;
-	vertical-align: baseline;
-	list-style: none;
-	}
-
-#tickr-scroll 
-	{
-	background: #ffffff;
-	height: 27px;
-	margin: 3px auto 0px auto;
-	overflow: hidden;
-	padding: 0px;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	}
-
-#tickr-scroll li 
-		{
-		color: #000000;
-		font: normal 14px arial, sans-serif;
-		line-height: 28px;
-		}
-
-#tickr-scroll a 
-	{
-
-	color: #000000;
-	text-decoration: none;
-	}
-
-#tickr-scroll a:hover 
-	{
-	color: #1d6684;
-	text-decoration: none;
-	}
-
-#tickr-scroll ul
-	{
-	padding: 0px 2px 0px 2px;
-	-webkit-animation: tickr 12s cubic-bezier(1, 0, .5, 0) infinite;
-	-moz-animation: tickr 12s cubic-bezier(1, 0, .5, 0) infinite;
-	animation: tickr 12s cubic-bezier(1, 0, .5, 0) infinite;
-	}
-
-#tickr-scroll ul:hover {
-	-webkit-animation-play-state: paused;
-	-moz-animation-play-state: paused;
-	animation-play-state: paused;
-	}
-
-@-webkit-keyframes tickr {
-	0%   { margin-top: 0; }
-	25%  { margin-top: -26px; }
-	50%  { margin-top: -52px; }
-	75%  { margin-top: -78px; }
-	100% { margin-top: 0; }
-	}
-@-moz-keyframes tickr {
-	0%   { margin-top: 0; }
-	25%  { margin-top: -26px; }
-	50%  { margin-top: -52px; }
-	75%  { margin-top: -78px; }
-	100% { margin-top: 0; }
-	}
-@-ms-keyframes tickr {
-	0%   { margin-top: 0; }
-	25%  { margin-top: -26px; }
-	50%  { margin-top: -52px; }
-	75%  { margin-top: -78px; }
-	100% { margin-top: 0; }
-	}
-@keyframes tickr {
-	0%   { margin-top: 0; }
-	25%  { margin-top: -26px; }
-	50%  { margin-top: -52px; }
-	75%  { margin-top: -78px; }
-	100% { margin-top: 0; }
-	}
-
-
-
-
-/***************
-START MEDIA QUERIES FOR SMARTPHONE FONT SIZES
-***************/
-
-@media handheld and (max-width: 300px),
-   screen and (max-device-width: 300px),
-   screen and (max-width: 300px)
-	{
-
-
-.tickr-title	 { font-size: 14px; }
-
-#tickr-scroll li { font-size: 12px; }
-
-
-	}
-/***************
-END MEDIA QUERIES
-***************/
-
-
-
+}
+.aTicker:hover{
+    color:blue;
+}

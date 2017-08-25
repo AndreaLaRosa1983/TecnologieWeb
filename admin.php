@@ -80,8 +80,8 @@ if(isset($_POST['register'])) {
             $urln = isset($_POST['urln']) ? clear($_POST['urln']) : false;
             if(empty($title) || empty($urln) ){
                 echo '<div class="col-sm-4">Riempi tutti i campi.<br /><br /><a href="javascript:history.back();"><span style="color:blue">Indietro</span></a></div>';
-            } elseif (strlen($title) > 140 ){
-                echo '<div class="col-sm-4">Titolo troppo lungo. Massimo 140 caratteri.<br /><br /><a href="javascript:history.back();"><span style="color:blue">Indietro</span></a></div>';
+            } elseif (strlen($title) > 35 ){
+                echo '<div class="col-sm-4">Titolo troppo lungo. Massimo 35 caratteri.<br /><br /><a href="javascript:history.back();"><span style="color:blue">Indietro</span></a></div>';
             } elseif (strlen($urln) > 2083  ) {
                 echo '<div class="col-sm-4">Url troppo grande <br/><br/><a href="javascript:history.back();"><span style="color:blue">Indietro</span></a></div>';
             } else {
