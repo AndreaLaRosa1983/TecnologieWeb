@@ -12,9 +12,8 @@
 <div style="margin: 0 auto" class="jumbotron text-center">
     <?php include('menu.html'); ?>
 
-
     <h1 style="color: white; font-family: 'Goudy Trajan Regular' ;
-    font-weight: bold; min-font-size: 500%" >ALMA MATER STUDIORUM UNIVERSITÀ DI BOLOGNA <img src="images/logo.png" width=12% height=12% /> </h1>
+    font-weight: bold; min-font-size: 500%" >UNIBO <img src="images/logo.png" width=12% height=12% /> </h1>
 </div>
 
 <?php
@@ -51,24 +50,9 @@ if(isset($_POST['login'])) {
                     <label>Username: <input type="text" name="username" required maxlength="32"></label><br/>
                     <label>Password: <input type="password" name="password" required maxlength="32"></label><br/>
                     <input type="submit" name="login" value="Accedi"><br/>
-
                 </form>
-             </div>
-             <div class="col-sm-12" style="">
-              <img src="images\cesena.jpg" alt="cesena" style="width: 20%; float: "right";text-align:"center"; ">
-                <a href="http://www.unibo.it/it/campus-cesena/campus-di-cesena"> Campus di Cesena</a>
-
-              <img src="images\ravenna.jpg" alt="ravenna" style="width: 20%; style=" font:"black"; >
-                <a href="http://www.unibo.it/it/campus-ravenna/campus-di-ravenna">  Campus di ravenna</a>
-
-              <img src="images\rimini.jpg" alt="rimini" style="width: 20%;  ">
-                <a href="http://www.unibo.it/it/campus-rimini/campus-di-rimini"> Campus di Rimini </a>
-
-              <img src="images\forlì.jpg" alt="forlì" style="width: 20%;  ">
-                <a href="http://www.unibo.it/it/campus-forli/campus-di-forli">Campus di Forlì  </a>
-              <img src="images\bologna.png" alt="forlì" style="width: 20%;  ">
-                  <a href="http://www.unibo.it/it/campus-bologna/campus-di-bologna">Campus di Bologna  </a>
             </div>
+        </div>
     </div>
     <?php
 }

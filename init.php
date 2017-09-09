@@ -20,7 +20,7 @@ include('core.php');
 ?>
 <div class="container">
     <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-12">
             <br/>
             <p>Studenti Online è uno spazio riservato agli studenti dell'Alma Mater Studiorum - Università di Bologna, permette di svolgere comodamente online le procedure utili durante il percorso universitario, dall'immatricolazione alla laurea.</p>
             <p>Lo sportello virtuale ti permette di : </p>
@@ -37,10 +37,6 @@ include('core.php');
                 <li> Presentare la domanda di laurea </li>
             </ul>
         </div>
-        <div class="col-sm-8">
-            <img class="edificio" src="images/edificio.jpg" alt="edificio" style="width: 72%; margin-top:5%; margin-left:25% " >
-        </div>
-
     </div>
 </div>
 </html>

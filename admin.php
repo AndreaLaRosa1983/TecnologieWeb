@@ -22,19 +22,19 @@ if(isset($_POST['register'])) {
     $password = isset($_POST['password']) ? clear($_POST['password']) : false;
     $email = isset($_POST['email']) ? clear($_POST['email']) : false;
     if(empty($username) || empty($password) || empty($email)){
-        echo 'Riempi tutti i campi.<br /><br /><a href="javascript:history.back();"><span style="color:blue">Indietro</span></a>';
+        echo '<div class="col-sm-4">Riempi tutti i campi.<br /><br /><a href="javascript:history.back();"><span style="color:blue">Indietro</span></a></div>';
     } elseif (strlen($username) > 32 ){
-        echo 'Username troppo lungo. Massimo 32 caratteri.<br /><br /><a href="javascript:history.back();"><span style="color:blue">Indietro</span></a>';
+        echo '<div class="col-sm-4">Username troppo lungo. Massimo 32 caratteri.<br /><br /><a href="javascript:history.back();"><span style="color:blue">Indietro</span></a></div>';
     } elseif (strlen($password) < 6 || strlen($password) > 16 ) {
-        echo 'Password non valida (maggiore di 6 caratteri minore di 32)<br/><br/><a href="javascript:history.back();"><span style="color:blue">Indietro</span></a>';
+        echo '<div class="col-sm-4">Password non valida (maggiore di 6 caratteri minore di 32)<br/><br/><a href="javascript:history.back();"><span style="color:blue">Indietro</span></a></div>';
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)){
-        echo 'Indirizzo email non valido.';
+        echo '<div class="col-sm-4">Indirizzo email non valido.</div>';
     } elseif (strlen($email) > 64 ){
-        echo 'Indirizzo email troppo lungo. Massimo 64 caratteri.<br /><br /><a href="javascript:history.back();"><span style="color:blue">Indietro</span></a>';
+        echo '<div class="col-sm-4">Indirizzo email troppo lungo. Massimo 64 caratteri.<br /><br /><a href="javascript:history.back();"><span style="color:blue">Indietro</span></a></div>';
     } elseif(mysqli_num_rows(mysqli_query($link,"SELECT * FROM utenti WHERE nome LIKE '$username'")) > 0){
-        echo 'Username già in uso. Sei pregato di sceglierne un altro.<br/ ><br /> <a href="javascript:history.back();"><span style="color:blue">Indietro</span></a>';
+        echo '<div class="col-sm-4">Username già in uso. Sei pregato di sceglierne un altro.<br/ ><br /> <a href="javascript:history.back();"><span style="color:blue">Indietro</span></a></div>';
     } elseif(mysqli_num_rows(mysqli_query($link,"SELECT * FROM utenti WHERE email LIKE '$email'")) > 0){
-        echo 'Indirizzo email già in uso. Sei pregato di sceglierne un altro.<br /><br /> <a href="javascript:history.back();"><span style="color:blue">Indietro</span></a>';
+        echo '<div class="col-sm-4">Indirizzo email già in uso. Sei pregato di sceglierne un altro.<br /><br /> <a href="javascript:history.back();"><span style="color:blue">Indietro</span></a></div>';
     } else {
         $password = md5($password);
         $ip = $_SERVER['REMOTE_ADDR'];
@@ -43,7 +43,10 @@ if(isset($_POST['register'])) {
                 $row = mysqli_fetch_assoc(mysqli_query($link, "SELECT nome,id FROM utenti WHERE nome LIKE '$username'"));
                 $_SESSION['username'] = $row['nome'];
                 $_SESSION['userid'] = $row['id'];
-                header('Location: admin.php');
+                echo "<div class=\"col-sm-4\">Inserimento avvenuto con successo.<br>
+     <a style='color:#1d6684' href=\"admin.php\">Clicca per proseguire</a>
+     
+     </div>";
             } else {
                 echo 'Errore nella query: ' . mysqli_error($link);
             }
@@ -54,6 +57,7 @@ if(isset($_POST['register'])) {
     <div class="container">
         <div class="row">
             <div class="col-sm-4">
+
                 <h3>Inserisci Utente</h3>
                 <form action="<?php echo $_SERVER['PHP_SELF'] ?> " method="POST">
                     <label>Username: <input type="text" name="username" required maxlength="32"></label><br/>
@@ -75,17 +79,20 @@ if(isset($_POST['register'])) {
             $title = isset($_POST['title']) ? clear($_POST['title']) : false;
             $urln = isset($_POST['urln']) ? clear($_POST['urln']) : false;
             if(empty($title) || empty($urln) ){
-                echo 'Riempi tutti i campi.<br /><br /><a href="javascript:history.back();"><span style="color:blue">Indietro</span></a>';
-            } elseif (strlen($title) > 140 ){
-                echo 'Titolo troppo lungo. Massimo 140 caratteri.<br /><br /><a href="javascript:history.back();"><span style="color:blue">Indietro</span></a>';
+                echo '<div class="col-sm-4">Riempi tutti i campi.<br /><br /><a href="javascript:history.back();"><span style="color:blue">Indietro</span></a></div>';
+            } elseif (strlen($title) > 35 ){
+                echo '<div class="col-sm-4">Titolo troppo lungo. Massimo 35 caratteri.<br /><br /><a href="javascript:history.back();"><span style="color:blue">Indietro</span></a></div>';
             } elseif (strlen($urln) > 2083  ) {
-                echo 'Url troppo grande <br/><br/><a href="javascript:history.back();"><span style="color:blue">Indietro</span></a>';
+                echo '<div class="col-sm-4">Url troppo grande <br/><br/><a href="javascript:history.back();"><span style="color:blue">Indietro</span></a></div>';
             } else {
 
                 if (mysqli_query($link, "INSERT INTO news (new_url, new_title) VALUES ('$urln','$title')")) {
                     if (mysqli_num_rows(mysqli_query($link, "SELECT * FROM news WHERE new_url LIKE '$urln' AND new_title='$title'")) > 0) {
-                        echo 'Inserimento a buon fine ';
-                        header('Location: admin.php');
+                        echo "<div class=\"col-sm-4\">Inserimento avvenuto con successo.<br>
+     <a style='color:#1d6684' href=\"admin.php\">Clicca per proseguire</a>
+    
+     </div>
+     ";
                     } else {
                         echo 'Errore nella query: ' . mysqli_error($link);
                     }
@@ -94,22 +101,54 @@ if(isset($_POST['register'])) {
         } else {
         ?>
 
-            <div class="row">
+
                 <div class="col-sm-4">
+
                     <h3>News</h3>
                     <form action="<?php echo $_SERVER['PHP_SELF'] ?> " method="POST">
-                        <label>Titolo: <input type="text" name="title" required maxlength="140"></label><br/>
+                        <label >Titolo: <input type="text" name="title" required maxlength="140"></label><br/>
                         <label>Url: <input type="text" name="urln" required maxlength="2083"></label><br/>
-                        <label> Data: <input type="date" name="data" required=""> </label> <br/>
                         <input type="submit" name="news" value="Inserisci Notizia"><br/><br/>
 
                     </form>
 
                 </div>
-            </div>
 
             <?php
             }
             ?>
 
+            <div class="col-sm-4">
+
+            <?php
+            if (isset($_POST['submit']) && $_POST['submit']=="invia")
+            {
+                $titolo = addslashes($_POST['titolo']);
+                $testo = addslashes($_POST['testo']);
+                $str_data = strtotime($_POST['data']);
+                include 'config.php';
+                $sql = "INSERT INTO appuntamenti (titolo,testo,str_data, user_id) VALUES ('$titolo','$testo','$str_data','0')";
+
+                if($result = mysqli_query($con,$sql) or die (mysqli_error($con)))
+                {
+            echo "<div class=\"col-sm-4\">Inserimento avvenuto con successo.<br>
+     <a style='color:#1d6684' href=\"admin.php\">Clicca per proseguire</a>
+     </div>";
+                }
+            }else{
+                ?>
+                <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+                    <h3> Inserisci nota Calendario Globale </h3>
+                    <label>Titolo: <input name="titolo" type="text" required maxlength="255"></label><br>
+                    <label>Testo: <textarea name="testo" cols="30" rows="8" required></textarea><label><br>
+                    <label>Data: <input name="data" type="date" value="gg-mm-aaaa" required></label><br>
+                    <input name="submit" type="submit" value="invia"><br>
+                    <a style='color:#1d6684' href="admin_calendar.php">Cerca e Modifica nota Amministratore</a>
+
+                </form>
+                <?php
+            }
+            ?>
+
         </div>
+</html>

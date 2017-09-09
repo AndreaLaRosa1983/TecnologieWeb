@@ -77,8 +77,8 @@
               <h3>
                   Sala studio multimediale "Alfa Albatros"
               </h3>
-              <p>Indirizzo:  Via Mulini 23/25
-              <p>Descrizione: Situata nel rinnovato complesso "Ex Macello", è dotata</p>
+              <p>  Via Mulini 23/25
+              <p>Situata nel rinnovato complesso "Ex Macello", è dotata</p>
               <p> di 26 postazioni pc e numerose postazioni per la connessione</p>
               <p>con pc portatile.All'interno della sala è possibile navigare</p>
               <p> in rete grazie alla completa copertura wireless "Almawifi".</p>
@@ -95,8 +95,8 @@
           </div>
           <div class="col-md-6">
               <p><img src= "http://i.investopedia.com/dimages/graphics/beta03.png" height="50" > </p>
-              <h3> Sala studio e lettura "Beta"</h3>
-              <p>Indirizzo: Piazzale K. Marx 131</p>
+              <h3>Sala studio e lettura "Beta"</h3>
+              <p>Piazzale K. Marx 131</p>
               <p>E' dotata di 4 postazioni PC,40 posti lettura e una zona </p>
               <p> "Erasmus" con 2 tavoli, 4 postazioni lettura e 1 PC </p>
               <p>destinati agli studenti internazionali.</p>
