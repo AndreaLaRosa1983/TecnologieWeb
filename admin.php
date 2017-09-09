@@ -11,7 +11,7 @@
 
 <div style="background-color:#66afe9; margin: 0 auto" class="jumbotron text-center" >
     <h1 style="color: white; font-family: 'Goudy Trajan Regular' ;
-    font-weight: bold; min-font-size: 500%" >Pagina Amministratore <img src="images/admin.png" width=6% height=6% alt=”image.admin.png Logo – Admin” /> </h1>
+    font-weight: bold; min-font-size: 500%" >Pagina Amministrazione<img src="images/admin.png" width=6% height=6% alt=”image.admin.png Logo – Admin” /> </h1>
 </div>
 
 <?php
