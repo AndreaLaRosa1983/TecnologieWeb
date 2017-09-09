@@ -88,7 +88,7 @@
                 echo "<tr>\n
   <td colspan=\"".$cols."\">
   <a style='color:#1d6684' href=\"?d=" . $precedente . "\">&lt;&lt;</a>
-  " . $nomi_mesi[$m-1] . " " . $y . " 
+  " . $nomi_mesi[$m-1] . " " . $y . "
   <a style='color:#1d6684' href=\"?d=" . $successivo . "\">&gt;&gt;</a></td></tr>";
                 foreach($nomi_giorni as $v)
                 {
@@ -118,7 +118,7 @@
                         $user_id = $_SESSION['userid'];
                         $con = mysqli_connect($host,$user,$pass) or die (mysqli_error($con));
                         $sel = mysqli_select_db($con,$db) or die (mysqli_error($con));
-                        $sql = "SELECT str_data FROM appuntamenti WHERE user_id=$user_id OR user_id='0'";
+                        $sql = "SELECT str_data FROM appuntamenti WHERE user_id=$user_id";
                         $result = mysqli_query($con,$sql) or die (mysqli_error($con));
                         if(mysqli_num_rows($result) > 0)
                         {

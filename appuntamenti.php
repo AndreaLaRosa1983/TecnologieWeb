@@ -24,14 +24,7 @@ if(isset($_GET['day']) && is_numeric($_GET['day']))
 {
   $day = $_GET['day'];
   include 'config.php';
-    $host = 'localhost';
-    $user = 'root';
-    $pass = '';
-    $db = 'agenda';
-    $user_id = $_SESSION['userid'];
-    $con = mysqli_connect($host,$user,$pass) or die (mysqli_error($con));
-    $sel = mysqli_select_db($con,$db) or die (mysqli_error($con));
-  $sql = "SELECT * FROM appuntamenti WHERE str_data=$day AND user_id='0'" ;
+  $sql = "SELECT * FROM appuntamenti WHERE str_data=$day";
   $result = mysqli_query($con,$sql) or die (mysqli_error($con));
   if(mysqli_num_rows($result) > 0)
   {
@@ -40,34 +33,17 @@ if(isset($_GET['day']) && is_numeric($_GET['day']))
       $id = stripslashes($fetch['id']);
       $titolo = stripslashes($fetch['titolo']);
       $testo = stripslashes($fetch['testo']);
-      $data = date("d-m-Y", $fetch['str_data']); 
+      $data = date("d-m-Y", $fetch['str_data']);
       echo "<h2> Note del <b>$data</b></h2><br><p> Titolo: " . $titolo . "</p><p> Nota: " . $testo . "</p><br>
-
-      <a style='color: #d92432' href=\"calendar.php\">Torna a Calendario</a>
-      <hr>";
-    }
-  } $sql = "SELECT * FROM appuntamenti WHERE str_data=$day AND user_id=$user_id " ;
-    $result = mysqli_query($con,$sql) or die (mysqli_error($con));
-    if(mysqli_num_rows($result) > 0)
-    {
-        while($fetch = mysqli_fetch_array($result))
-        {
-            $id = stripslashes($fetch['id']);
-            $titolo = stripslashes($fetch['titolo']);
-            $testo = stripslashes($fetch['testo']);
-            $data = date("d-m-Y", $fetch['str_data']);
-            echo "<h2> Note del <b>$data</b></h2><br><p> Titolo: " . $titolo . "</p><p> Nota: " . $testo . "</p><br>
-
       <a style='color: #d92432' href=\"cancella.php?id=$id\">Cancella</a> |
       <a style='color: #d92432' href=\"modifica.php?id=$id\">Modifica</a><br><br>
       <a style='color: #d92432' href=\"calendar.php\">Torna a Calendario</a>
       <hr>";
-        }
     }
+  }
 }
 ?>
         </div>
     </div>
 </div>
 </html>
-
