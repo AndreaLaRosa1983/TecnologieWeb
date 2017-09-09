@@ -33,7 +33,7 @@
                     width: 80px;
                     height: 80px;
                     margin-top: 120px;
-                    margin-left: 100px;
+                    margin-left: 80px;
                     position:absolute;
                     color: #ffffff;
                     line-height: 80px;
